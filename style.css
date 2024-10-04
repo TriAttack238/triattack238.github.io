@@ -1,0 +1,122 @@
+html
+{
+  margin-left:2%;
+  height: 100%;
+  width: 100%;
+}
+
+button.table-button
+{
+  color: black;
+  font-size: 20px;
+  font-family: "Courier New", monospace;
+  padding: 7px 20px;
+  border-radius: 5px;
+  margin: 0px 0px 0px 20px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 5px;
+  transition: 0.8s;
+  font-weight: bold;
+}
+
+button.table-button a 
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+button.table-button:hover
+{
+  background-color: rgba(255,255,255);
+  cursor: pointer;
+  border: 3px solid black;
+
+}
+button.table-button:hover a
+{
+ color: black;
+}
+
+a:link,a:visited
+{
+  color: #31110A; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+.header 
+{
+  padding: 0.1px;
+  text-align: left;
+  background: #3029E7;
+  color: black;
+  font-size: 20px;
+  font-family: "Courier New", monospace;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+h1
+{
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  font-family: "Courier New", monospace;
+}
+
+.center-image
+{
+  top:50%;
+  bottom:50%;
+  margin:auto;
+}
+
+body
+{
+  background: #19181D;
+  font-size: 18px;
+  color: white;
+  font-family: "Courier New", monospace;
+}
+
+footer 
+{
+  text-align: center;
+  padding: 3px;
+  background-color: #B58B00;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.aligncenter 
+{
+    text-align: center;
+}
+
+table
+{
+  height: 100px;
+  width: 100%;
+  opacity: 0.9;
+  background-position: center;
+  border-collapse: collapse;
+}
+
+tr,td
+{
+  border-bottom: 2px solid orange;
+  font-weight: bold;
+  top:50%;
+  bottom:50%;
+  margin:auto;
+  padding:5px;
+}
+
+
+
