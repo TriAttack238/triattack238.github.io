@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sean's Website</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <script>
+      // loads header
+      function loadHeader() {
+        fetch('/nav.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('replace_with_navbar').outerHTML = data;
+          });
+      }
+      document.addEventListener('DOMContentLoaded', loadHeader);
+    </script>
+  </head>
+  <body>
+    <div id="replace_with_navbar"></div>
+
+<br><br><br><br><br>
+
+  <!-- headings -->
+  <h1>First Post!</h1>
+  
+  <p>
+  Hello everyone!
+
+  My name is Sean, and welcome to my website! Here, I'll be posting my thoughts occasionally on things that interest me, like cooking, programming, and science. Maybe I'll even set up RSS properly!
+  </p>
+
+  
+    
+  <script src="/script.js"></script>
+<footer><a href="#index.html">&#8593;</a>&emsp;&emsp;<a class="name" href="/credit.html">Credits</a></footer>
+</body>
+</html>
