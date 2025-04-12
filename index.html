@@ -6,17 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <title>Sean's Website</title>
   <link href="style.css" rel="stylesheet" type="text/css">
-  <script>
-    // loads header
-    function loadHeader() {
-      fetch('nav.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('replace_with_navbar').outerHTML = data;
-        });
-    }
-    document.addEventListener('DOMContentLoaded', loadHeader);
-  </script>
 </head>
 <body>
   <div id="replace_with_navbar"></div>
@@ -35,6 +24,7 @@
   </p>
   <script src="script.js"></script>
 
-<footer><a href="#index.html">&#8593;</a>&emsp;&emsp;<a class="name" href="credit.html">Credits</a></footer>
+
+  <footer><a class="other-link" href="#index.html">&#8593;</a>&emsp;&emsp;<a class="other-link" href="credit.html">Credits</a></footer>
 </body>
 </html>

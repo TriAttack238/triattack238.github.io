@@ -6,17 +6,6 @@
     <meta name="viewport" content="width=device-width">
     <title>Sean's Website</title>
     <link href="/style.css" rel="stylesheet" type="text/css">
-    <script>
-      // loads header
-      function loadHeader() {
-        fetch('/nav.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('replace_with_navbar').outerHTML = data;
-          });
-      }
-      document.addEventListener('DOMContentLoaded', loadHeader);
-    </script>
   </head>
   <body>
     <div id="replace_with_navbar"></div>
@@ -24,25 +13,21 @@
 <br><br><br><br><br>
 
   <!-- headings -->
-  <h1>Template</h1>
+  <h1>Post Title</h1>
   
   <p>
-    This is a template post for other posts to use
+    Put your usual text between these tags. I've styled the body so text doesn't start at the page ends. 
   </p>
 
-  <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>COBOL (like <a class="link"   style="color:yellow" href="https://github.com/otterkit/otterkit">The Otterkit Project</a> or other programming and computing topics</li>
-    <li>3</li>
-    <li>4</li>
-  </ul>
-
+  <a href ="https://www.youtube.com/watch?v=xvFZjo5PgG0">Some Link</a>
+  <br><br>
+  <!--You might need to trial and error image sizes-->
+  <img src = "/posts/post_assets/image.jpg" width = 400px height = 400px alt = "Some text for accessibility reasons">
+   
   <p>
-  If you're interested, please download my <a class="link" style="color:yellow" href="/assets/sean_vo_resume.pdf">resume</a> here.
+  <a href="/posts/post_assets/image4.jpeg" download>Download me</a>
   </p>
-    
   <script src="/script.js"></script>
-<footer><a href="#index.html">&#8593;</a>&emsp;&emsp;<a class="name" href="/credit.html">Credits</a></footer>
+  <footer><a class="other-link" href="#index.html">&#8593;</a>&emsp;&emsp;<a class="other-link" href="credit.html">Credits</a></footer>
 </body>
 </html>
