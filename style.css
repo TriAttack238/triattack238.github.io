@@ -1,3 +1,4 @@
+/* general styles used for page layout.*/
 html
 {
   margin-left:2%;
@@ -5,18 +6,48 @@ html
   width: 100%;
 }
 
+body
+{
+  background: #19181D;
+  font-size: 22px;
+  color: white;
+  font-family: "Courier New", monospace;
+  margin-left:20px;
+  margin-right:100px;
+}
+
+h1
+{
+  text-align: left;
+  color: white;
+  font-size: 22px;
+  font-family: "Courier New", monospace;
+}
+
+footer 
+{
+  text-align: center;
+  padding: 3px;
+  background-color: #B58B00;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* styles used for the navigation bar and links */
 button.table-button
 {
   color: black;
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Courier New", monospace;
   padding: 7px 20px;
   border-radius: 5px;
   margin: 0px 0px 0px 20px;
   background-color: transparent;
-  border: transparent;
+  border: 3px solid transparent; 
   border-radius: 5px;
-  transition: 0.8s;
   font-weight: bold;
 }
 
@@ -38,67 +69,6 @@ button.table-button:hover a
  color: black;
 }
 
-a:link,a:visited
-{
-  color: #31110A; 
-  background-color: transparent; 
-  text-decoration: none;
-}
-
-.header 
-{
-  padding: 0.1px;
-  text-align: left;
-  background: #3029E7;
-  color: black;
-  font-size: 20px;
-  font-family: "Courier New", monospace;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-h1
-{
-  text-align: left;
-  color: white;
-  font-size: 20px;
-  font-family: "Courier New", monospace;
-}
-
-.center-image
-{
-  top:50%;
-  bottom:50%;
-  margin:auto;
-}
-
-body
-{
-  background: #19181D;
-  font-size: 18px;
-  color: white;
-  font-family: "Courier New", monospace;
-}
-
-footer 
-{
-  text-align: center;
-  padding: 3px;
-  background-color: #B58B00;
-  color: white;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.aligncenter 
-{
-    text-align: center;
-}
-
 table
 {
   height: 100px;
@@ -116,7 +86,47 @@ tr,td
   bottom:50%;
   margin:auto;
   padding:5px;
+  font-size:20px;
 }
 
+.header 
+{
+  padding: 0.1px;
+  text-align: left;
+  background: #3029E7;
+  color: black;
+  font-size: 22px;
+  font-family: "Courier New", monospace;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
 
+/* styles used for links */
+a:link,a:visited
+{
+  color:yellow;
+  text-decoration: none;
+  background-color:transparent;
+}
 
+a.other-link:link, a.other-link:visited
+{
+  color: #31110A; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+/* centering styles */
+.center-image
+{
+  top:50%;
+  bottom:50%;
+  margin:auto;
+}
+
+.aligncenter 
+{
+    text-align: center;
+}
